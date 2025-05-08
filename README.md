@@ -42,7 +42,7 @@ We're seeking strategic partners and investors to help us build:
 
 \`\`\`bash
 # Clone repository
-git clone https://github.com/username/samoa-gaming-gateway.git
+git clone https://github.com/Hamobcdev/Samoa-Gaming-Gateway
 cd samoa-gaming-gateway
 
 # Install dependencies
@@ -51,3 +51,11 @@ npm install
 # Start development server
 npm run dev
 \`\`\`
+
+## Contact
+
+For partnership and investment inquiries, please reach out via:
+
+- **Email**: [synergyblockchaintf@gmail.com](mailto:synergyblockchaintf@gmail.com)
+- **X (Twitter)**: [@siaosiw](https://x.com/siaosiw)
+- **LinkedIn**: [Anthony George Williams](https://linkedin.com/in/anthony-george-williams)
