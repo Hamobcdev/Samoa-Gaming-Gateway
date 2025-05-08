@@ -59,3 +59,6 @@ For partnership and investment inquiries, please reach out via:
 - **Email**: [synergyblockchaintf@gmail.com](mailto:synergyblockchaintf@gmail.com)
 - **X (Twitter)**: [@siaosiw](https://x.com/siaosiw)
 - **LinkedIn**: [Anthony George Williams](https://linkedin.com/in/anthony-george-williams)
+
+License
+MIT
