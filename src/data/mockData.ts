@@ -1,4 +1,11 @@
-import { Game, Tournament, TelecomWallet, User, Transaction, NotificationType } from '../types';
+import {
+  Game,
+  Tournament,
+  TelecomWallet,
+  User,
+  Transaction,
+  NotificationType,
+} from '../types';
 
 export const mockGames: Game[] = [
   {
@@ -8,7 +15,7 @@ export const mockGames: Game[] = [
     description: 'Battle Royale action with players across Samoa and the Pacific',
     minBet: 5,
     maxBet: 100,
-    players: 4
+    players: 4,
   },
   {
     id: '2',
@@ -17,16 +24,16 @@ export const mockGames: Game[] = [
     description: 'Test your strategic thinking in fast-paced chess matches',
     minBet: 2,
     maxBet: 50,
-    players: 2
+    players: 2,
   },
   {
     id: '3',
     title: 'Poker Tournament',
     image: 'https://images.pexels.com/photos/1871508/pexels-photo-1871508.jpeg',
-    description: 'Compete in Texas Hold\'em tournaments with players around the region',
+    description: 'Compete in Texas Hold’em tournaments with players around the region',
     minBet: 10,
     maxBet: 200,
-    players: 6
+    players: 6,
   },
   {
     id: '4',
@@ -35,26 +42,26 @@ export const mockGames: Game[] = [
     description: 'Team up with fellow Samoan players in 5v5 MOBA battles',
     minBet: 5,
     maxBet: 100,
-    players: 2
-  }
+    players: 2,
+  },
 ];
 
 export const mockTelecomWallets: TelecomWallet[] = [
   {
     provider: 'Digicel mWallet',
     logo: 'https://images.pexels.com/photos/5077064/pexels-photo-5077064.jpeg',
-    id: 'digicel'
+    id: 'digicel',
   },
   {
     provider: 'Vodafone M-PAiSA',
     logo: 'https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg',
-    id: 'vodafone'
+    id: 'vodafone',
   },
   {
     provider: 'BlueSky KlickPay',
     logo: 'https://images.pexels.com/photos/5077039/pexels-photo-5077039.jpeg',
-    id: 'bluesky'
-  }
+    id: 'bluesky',
+  },
 ];
 
 export const mockUser: User = {
@@ -70,7 +77,7 @@ export const mockUser: User = {
         type: 'deposit',
         status: 'completed',
         timestamp: '2025-03-15T14:30:00Z',
-        description: 'Deposit via Digicel mWallet'
+        description: 'Deposit via Digicel mWallet',
       },
       {
         id: 't2',
@@ -78,7 +85,7 @@ export const mockUser: User = {
         type: 'bet',
         status: 'completed',
         timestamp: '2025-03-16T09:15:00Z',
-        description: 'PUBG Mobile match entry'
+        description: 'PUBG Mobile match entry',
       },
       {
         id: 't3',
@@ -86,7 +93,7 @@ export const mockUser: User = {
         type: 'winnings',
         status: 'completed',
         timestamp: '2025-03-16T10:30:00Z',
-        description: 'Won PUBG Mobile match'
+        description: 'Won PUBG Mobile match',
       },
       {
         id: 't4',
@@ -94,15 +101,15 @@ export const mockUser: User = {
         type: 'tournament-entry',
         status: 'completed',
         timestamp: '2025-03-18T16:45:00Z',
-        description: 'Entry fee for Samoa Gaming Championship'
-      }
-    ]
+        description: 'Entry fee for Samoa Gaming Championship',
+      },
+    ],
   },
   stats: {
     wins: 15,
     losses: 7,
-    tournamentWins: 2
-  }
+    tournamentWins: 2,
+  },
 };
 
 export const mockTournaments: Tournament[] = [
@@ -117,7 +124,7 @@ export const mockTournaments: Tournament[] = [
     maxPlayers: 64,
     currentPlayers: 42,
     status: 'upcoming',
-    brackets: []
+    brackets: [],
   },
   {
     id: 't2',
@@ -130,7 +137,7 @@ export const mockTournaments: Tournament[] = [
     maxPlayers: 16,
     currentPlayers: 16,
     status: 'in-progress',
-    brackets: []
+    brackets: [],
   },
   {
     id: 't3',
@@ -143,8 +150,8 @@ export const mockTournaments: Tournament[] = [
     maxPlayers: 64,
     currentPlayers: 32,
     status: 'upcoming',
-    brackets: []
-  }
+    brackets: [],
+  },
 ];
 
 export const mockNotifications: NotificationType[] = [
@@ -154,7 +161,7 @@ export const mockNotifications: NotificationType[] = [
     read: false,
     message: 'TuiGamer has challenged you to a PUBG Mobile match for $20',
     timestamp: '2025-04-20T15:30:00Z',
-    actionUrl: '/challenges/c1'
+    actionUrl: '/challenges/c1',
   },
   {
     id: 'n2',
@@ -162,13 +169,13 @@ export const mockNotifications: NotificationType[] = [
     read: false,
     message: 'The Samoa PUBG Championship starts in 2 hours',
     timestamp: '2025-05-01T16:00:00Z',
-    actionUrl: '/tournaments/t1'
+    actionUrl: '/tournaments/t1',
   },
   {
     id: 'n3',
     type: 'payout',
     read: true,
     message: 'Your withdrawal of $40 to Digicel mWallet has been processed',
-    timestamp: '2025-04-19T11:45:00Z'
-  }
+    timestamp: '2025-04-19T11:45:00Z',
+  },
 ];

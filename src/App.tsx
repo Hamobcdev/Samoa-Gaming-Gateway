@@ -1,33 +1,30 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import WalletPage from './pages/WalletPage';
+import Investor from './pages/Investor';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState<string>('home');
 
-  const renderPage = () => {
-    switch(currentPage) {
-      case 'home':
-        return <Home onNavigate={setCurrentPage} />;
-      case 'wallet':
-        return <WalletPage onNavigate={setCurrentPage} />;
-      // Additional pages would be added here
-      default:
-        return <Home onNavigate={setCurrentPage} />;
-    }
+  const handleNavigate = (page: string) => {
+    setCurrentPage(page);
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col">
-      <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
-      <main className="flex-1">
-        {renderPage()}
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Navbar currentPage={currentPage} onNavigate={handleNavigate} />
+        <Routes>
+          <Route path="/" element={<Home onNavigate={handleNavigate} />} />
+          <Route path="/wallet" element={<WalletPage onNavigate={handleNavigate} />} />
+          <Route path="/investor" element={<Investor />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+

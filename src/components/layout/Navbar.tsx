@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Bell, Wallet, Menu, X, Trophy, Gamepad2, Home, Users } from 'lucide-react';
 import { mockUser, mockNotifications } from '../../data/mockData';
 import Avatar from '../common/Avatar';
-import Badge from '../common/Badge';
 
 interface NavbarProps {
   currentPage: string;
